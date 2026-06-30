@@ -1,0 +1,31 @@
+import { useState, useEffect } from "react";
+import { ItemList } from "../ItemList/ItemList";
+
+import "../ItemList/ItemList.css";
+
+export const ItemListContainer = () => {
+    const [products, setProducts] = useState([]);
+    const [loading, setLoading] = useState(true);
+    
+    
+    useEffect(() => {
+        setLoading(true);
+        
+       fetch("/data/products.json")
+            .then((res) => res.json())
+            .then((data) => setProducts(data))
+            .catch((err) => console.log(err))
+            .finally(() => {
+                setLoading(false);
+            });
+    }, []); 
+
+    if (loading) {return <p>Cargando...</p>};
+        
+    return (
+        <section>
+            <ItemList products={products}/>
+        </section>
+     );
+    
+}

@@ -1,0 +1,9 @@
+footer {
+  background-color: rgb(71, 2, 71);
+  color: inherit;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  
+}

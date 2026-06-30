@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "name": "Creación de una línea cosmética",
+        "description": "Curso diseñado para emprendedores que desean plantear el concepto de su linea, determinar al segmento que va dirigida, el nicho y la historia. Concepto de marca, concepto de logo y registro de marca. El curso abarca desde la investigación de mercado hasta el diseño de envases y estrategias de marketing.",
+        "price": 200000,
+        "image": "/img/concepto linea.png"
+    },
+    {
+        "id": 2,
+        "name": "Formas Cosméticas",
+        "description": "Descripción  de las distintas formas cosméticas, sus características, usos de cada forma y saber seleccionar el tipo de forma para cada concepto de producto.",
+        "price": 100000,
+        "image": "/img/formas cosmeticas.png"
+    },
+    {
+        "id": 3,
+        "name": "Materias primas de origen natural",
+        "description": "Descripción de las materias primas de origen natural y su aplicación en la creación de productos cosméticos.",
+        "price": 150000,
+        "image": "/img/materias primas naturales.png"
+    },
+    {
+        "id": 4,
+        "name": "Búsqueda de laboratorio elaborador",
+        "description": "Selección del laboratorio elaborador según el tipo de producto, cantidad, tiempos de entrega y presupuesto. Proceso de cotización, negociación y selección del laboratorio adecuado para la producción de la línea cosmética.",
+        "price": 100000,
+        "image": "/img/laboratorio.png"
+    }
+]

@@ -1,0 +1,15 @@
+.nav-list   {
+
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+.nav-list li {
+  margin: 0.5rem;
+  font-size: 1.5rem;
+}
+.nav-list li a {
+  color: inherit;
+  text-decoration: none;
+  size: 1rem;
+}
