@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { ItemList } from "../ItemList/ItemList";
-
+import { getProducts } from "../../services/productsService";
+import { useParams } from "react-router-dom";
 
 import "../ItemList/ItemList.css";
 
@@ -12,10 +13,9 @@ export const ItemListContainer = () => {
     useEffect(() => {
         setLoading(true);
         
-       fetch("/data/products.json")
-            .then((res) => res.json())
+       getProducts()
             .then((data) => setProducts(data))
-            .catch((err) => console.log(err))
+            .catch((err) => console.log("Error:", err))
             .finally(() => {
                 setLoading(false);
             });
