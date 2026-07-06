@@ -2,9 +2,9 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./ProductFormContainer.css";
 import { ProductFormUI } from "./ProductFormUI";
-import {validateProduct} from "../../utils/validateProduct";
+import {validateProducts} from "../../utils/validateProducts";
 import {uploadImage} from "../../services/uploadImage";
-import {createProduct} from "../../services/productService";
+import {createProduct} from "../../services/productsService";
 
 export const ProductFormContainer = () => {
     const navigate = useNavigate();
@@ -15,7 +15,7 @@ export const ProductFormContainer = () => {
         name: "",
         description: "",
         price: "",
-        category: "",
+        
     });
 
     const handleChange = (e) => {
